@@ -1,2 +1,2 @@
-#Engineering 4 Notebook
-#Jonah Newman
+Engineering 4 Notebook
+Jonah Newman
