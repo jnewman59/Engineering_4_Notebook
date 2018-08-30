@@ -11,6 +11,8 @@ Set up Raspberry Pi Zero, connected it to monitor, booted it, and wrote a simple
 
 ### Code
 
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/helloWorld.sh](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/helloWorld.sh)
+
 ## Mathematica Intro
 
 ### Lessons Learned
@@ -18,6 +20,8 @@ Set up Raspberry Pi Zero, connected it to monitor, booted it, and wrote a simple
 Started Wolfram Mathematica on Raspi 0 to practice basic commands. We learned how to evaluate expressions, define and operate on lists, plot lists, derive and integrate functions, and create a dynamic plot of a function with constants controlled by user input through sliders. 
 
 ### Code
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Mathematica/firstproject.nb](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Mathematica/firstproject.nb)
 
 ## Python Intro
 
@@ -27,6 +31,10 @@ Wrote a Python script (using IDLE) to print "Hello World" 10 times by looping. T
 
 ### Code
 
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/helloWorld.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/helloWorld.py)
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/automatic_dice.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/automatic_dice.py)
+
 ## Python - Calculator
 
 ### Lessons Learned
@@ -34,6 +42,8 @@ Wrote a Python script (using IDLE) to print "Hello World" 10 times by looping. T
 Wrote a Python script that when given two real numbers a and b outputs a+b, a-b, a\*b, a/b, a%b, and a^b. Learned how to iterate over dictionary keys and use lambda notation.
 
 ### Code
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/calculator.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/calculator.py)
 
 ## Python - Quadratic Solver
 
@@ -43,13 +53,13 @@ Wrote a Python script that when given the coefficients of a quadratic equation f
 
 ### Code
 
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/quadraticSolver.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/quadraticSolver.py)
+
 ## Git Intro
 
 ### Lessons Learned
 
 Created git repository for our engineering notebook, made a github account, and linked our repo to one on github. Learned how to initialize a git repository, link it to a remote (hosted on Github), make commits, and push to the remote. 
-
-### Code
 
 ## Git - Forks and Clones
 
@@ -57,14 +67,10 @@ Created git repository for our engineering notebook, made a github account, and 
 
 Forked a repository owned by the chssigma github account, cloned it to our computer, edited the users file in the appropriate directory, committed, pushed, and submitted a pull request to merge our edits back into the original repo. Learned how to fork and clone a git repository, as well as how to make and comment on a pull request.
 
-### Code
-
 ## Git - Engineering Notebook
 
 ### Lessons Learned
 
 Started the actual Engineering 4 notebook in our notebook repo by writing it in the README using Markdown. Learned how to use vim more effectively and how to format in Markdown.
-
-### Code
 
 # Projects
