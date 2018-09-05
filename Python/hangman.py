@@ -1,11 +1,13 @@
-#import subprocess, os
-
-word = input("Select the word: ")
+import subprocess, os
+word = '3'
+while not word.isalpha():
+    word = input("Select the word: ")
+    if not word.isalpha():
+        print("That is not a word. Please try again.\n")
 print("\n"*50)
 
-#def cls():
-#    cls = os.system("CLS")
-#cls()
+cls = os.system("CLS")
+
 hangmanCounter = 0
 won = False
 lettersGuessed = []
@@ -42,14 +44,15 @@ while not won and hangmanCounter < 8:
     for char in word:
         if not char in lettersGuessed:
             won = False
-    if won or hangmanCounter >= 8:
-        break
     if guessLetter in word:
-        print("Congrats! You guessed one of the word's letters.\n")
+        print("You guessed one of the word's letters!\n")
     else:
         print("Sorry, that letter is not in the word.\n")
         hangmanCounter += 1
+    if won or hangmanCounter >= 8:
+        break
     print("Your hangman status: ")
+    
     printHangman(hangmanCounter)
 
     
@@ -58,7 +61,7 @@ if won:
     print("Congrats! You won! The word was " +word +'.\n')
     print("This is how close you were to being hung:")
 else:
-    print("Sorry, you have been hung.")
+    print("You have been hung.")
 printHangman(hangmanCounter)
             
     
