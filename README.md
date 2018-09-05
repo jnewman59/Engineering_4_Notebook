@@ -73,4 +73,24 @@ Forked a repository owned by the chssigma github account, cloned it to our compu
 
 Started the actual Engineering 4 notebook in our notebook repo by writing it in the README using Markdown. Learned how to use vim more effectively and how to format in Markdown.
 
+## Python - Strings and Loops
+
+### Lessons Learned
+
+Wrote a Python program to split a string across a delimiting character (in this case " "), then print it out letter by letter.
+
+### Code
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/stringSplitter.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/stringSplitter.py)
+
+## Python - Hangman
+
+### Lessons Learned
+
+Wrote a Python program to play hangman with the user after a word has been inputted. Learned how to execute terminal commands from within a python script.
+
+### Code
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py)
+
 # Projects
