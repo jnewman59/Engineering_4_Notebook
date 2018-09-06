@@ -93,4 +93,14 @@ Wrote a Python program to play hangman with the user after a word has been input
 
 [https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py)
 
+## Bash - GPIO Pins
+
+### Lessons Learned
+
+Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink (after soldering a male-male header to those pins). Learned how to use GPIO output from a Pi Zero.
+
+### Code 
+
+[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/ledBlink.sh](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/ledBlink.sh)
+
 # Projects
