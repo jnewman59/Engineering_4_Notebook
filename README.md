@@ -11,7 +11,7 @@ Set up Raspberry Pi Zero, connected it to monitor, booted it, and wrote a simple
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/helloWorld.sh](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/helloWorld.sh)
+[helloWorld.sh](/Scripts/helloWorld.sh)
 
 ## Mathematica Intro
 
@@ -21,7 +21,7 @@ Started Wolfram Mathematica on Raspi 0 to practice basic commands. We learned ho
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Mathematica/firstproject.nb](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Mathematica/firstproject.nb)
+[firstproject.nb](/Mathematica/firstproject.nb)
 
 ## Python Intro
 
@@ -31,9 +31,9 @@ Wrote a Python script (using IDLE) to print "Hello World" 10 times by looping. T
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/helloWorld.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/helloWorld.py)
+[helloWorld.py](/Python/helloWorld.py)
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/automatic_dice.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/automatic_dice.py)
+[automatic_dice.py](/Python/automatic_dice.py)
 
 ## Python - Calculator
 
@@ -43,7 +43,7 @@ Wrote a Python script that when given two real numbers a and b outputs a+b, a-b,
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/calculator.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/calculator.py)
+[calculator.py](/Python/calculator.py)
 
 ## Python - Quadratic Solver
 
@@ -53,7 +53,7 @@ Wrote a Python script that when given the coefficients of a quadratic equation f
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/quadraticSolver.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/quadraticSolver.py)
+[quadraticSolver.py](/Python/quadraticSolver.py)
 
 ## Git Intro
 
@@ -81,7 +81,7 @@ Wrote a Python program to split a string across a delimiting character (in this 
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/stringSplitter.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/stringSplitter.py)
+[stringSplitter.py](/Python/stringSplitter.py)
 
 ## Python - Hangman
 
@@ -91,7 +91,7 @@ Wrote a Python program to play hangman with the user after a word has been input
 
 ### Code
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Python/hangman.py)
+[hangman.py](/Python/hangman.py)
 
 ## Bash - GPIO Pins
 
@@ -101,6 +101,6 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 
 ### Code 
 
-[https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/ledBlink.sh](https://github.com/jnewman59/Engineering_4_Notebook/blob/master/Scripts/ledBlink.sh)
+[ledBlink.sh](/Scripts/ledBlink.sh)
 
 # Projects
