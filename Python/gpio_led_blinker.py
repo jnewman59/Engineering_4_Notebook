@@ -12,7 +12,7 @@ from time import sleep
 red_pin = 18
 blue_pin = 16 # LED Pins
 
-gpio.setwarnings(False)
+# gpio.setwarnings(False)
 gpio.setmode(gpio.BOARD)
 gpio.setup(red_pin, gpio.OUT)
 gpio.setup(blue_pin, gpio.OUT)  # pinMode() but python
