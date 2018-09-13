@@ -103,4 +103,12 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 
 [ledBlink.sh](/Scripts/ledBlink.sh)
 
+## Python - GPIO Pins
+
+### Lessons Learned
+
+### Code
+
+## SSH - GPIO Pins
+
 # Projects
