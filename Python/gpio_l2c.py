@@ -16,14 +16,23 @@ disp.display()
 
 width = disp.width
 height = disp.height
-image = Image.new('1', (width, height))
-
+#image = Image.new('1', (width, height))
+"""
 draw = ImageDraw.Draw(image)
 font = ImageFont.load_default()
 
 draw.text((0,0), 'Accel Data:', font=font, fill=255)
+"""
 
 while True:
+    disp.clear()
+    
+    image = Image.new('1', (width, height))
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.load_default()
+    
+    draw.text((0,0), 'Accel Data:', font=font, fill=255)
+    
     accel, mag = lsm303.read()
     
     x_data, y_data, z_data = accel
@@ -36,11 +45,7 @@ while True:
     draw.text((0, 30), 'Y: ' + y_data, font=font, fill=255)
     draw.text((0, 45), 'Z: ' + z_data, font=font, fill=255)
 
-    disp.clear()
-    disp.display()
     disp.image(image)
     disp.display()
-    
-    print("Printing data!")
     
     time.sleep(0.5)
