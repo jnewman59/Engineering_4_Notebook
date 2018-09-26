@@ -33,7 +33,7 @@ xAxisCoordinates = (15, 25, 128, 25)
 axisImage = Image.new('1', (width, height))
 axisDraw = ImageDraw.Draw(axisImage)
 
-rotateImage = Image.new('1', (width, height))
+rotateImage = Image.new('1', (width, 17))
 rotateDraw = ImageDraw.Draw(rotateImage)
 
 font = ImageFont.load_default()
@@ -57,6 +57,7 @@ while True:
     #space from Y axis to end of screen: 112px
     #space from X axis to top of screen: 48px
 
+    dataImage.paste(rotatedImage, (0, -80))
     axisImage.paste(dataImage, (0 ,0))
     axisDraw.line(yAxisCoordinates, fill = 255)
     axisDraw.line(xAxisCoordinates, fill = 255)
