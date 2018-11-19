@@ -63,7 +63,7 @@ while stage == 3:
     sleep(delayTime)
 
 def dot(vec1, vec2):
-    assert (len(vec1)==len(vec2)), "You can't dot vectors of two different dimensions, dummy."
+    assert (len(vec1)==len(vec2)), "You can't dot vectors of two different dimensions, ya fookin imbecile"
     total = 0
     for i in range(0, len(vec1)):
         total += vec1[i]*vec2[i]
