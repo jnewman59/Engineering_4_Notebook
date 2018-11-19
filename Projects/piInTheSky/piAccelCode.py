@@ -11,8 +11,8 @@ alarmPin = 19
 delayTime = 0.01
 
 lsm303 = Adafruit_LSM303.LSM303()
-lsm303.mag_rate = Adafruit_LSM303.MAGRATE_220
-lsm303.accel_rate = Adafruit_LSM303.ACCELRATE_220
+#lsm303.mag_rate = Adafruit_LSM303.MAGRATE_220
+#lsm303.accel_rate = Adafruit_LSM303.ACCELRATE_220
 
 
 
