@@ -14,7 +14,7 @@ while True:
         camera.start_preview()
         button.wait_for_press()
         frame += 1
-        camera.capture('../Pictures/frame%03d.png' % frame)
+        camera.capture('../Pictures/frame%03d.jpg' % frame)
         sleep(2)
     except KeyboardInterrupt:
         camera.stop_preview()
