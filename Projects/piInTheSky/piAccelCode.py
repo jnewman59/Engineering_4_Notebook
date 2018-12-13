@@ -42,31 +42,29 @@ def dot(vec1, vec2):
 
 
 def blink(stage):
-    switch(stage){
-        case 0:
-            blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
-            if blinkTimer > 0.5:
-                gpio.output(led1Pin, True)
-            else:
-                gpio.output(led1Pin, False)
-        case 1:
-            blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
-            if blinkTimer > 0.5:
-                gpio.output(led2Pin, True)
-            else:
-                gpio.output(led2Pin, False)
-        case 2:
-            blinkTimer -= blinkTimer if blinkTimer > 2.0 else 0.0
-            if blinkTimer > 0.5 and blinkTimer < 1.0:
-                gpio.output(led1Pin, True)
-                gpio.output(led2Pin, False)
-            if blinkTimer > 1.5;
-                gpio.output(led2Pin, True)
-                gpio.output(led1Pin, False)
-            else:
-                gpio.output(led1Pin, False)
-                gpio.output(led2Pin, False)
-    }
+    if stage == 0:
+        blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
+        if blinkTimer > 0.5:
+            gpio.output(led1Pin, True)
+        else:
+            gpio.output(led1Pin, False)
+    elif stage == 1: 
+        blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
+        if blinkTimer > 0.5:
+            gpio.output(led2Pin, True)
+        else:
+            gpio.output(led2Pin, False)
+    elif stage == 2:
+        blinkTimer -= blinkTimer if blinkTimer > 2.0 else 0.0
+        if blinkTimer > 0.5 and blinkTimer < 1.0:
+            gpio.output(led1Pin, True)
+            gpio.output(led2Pin, False)
+        if blinkTimer > 1.5;
+            gpio.output(led2Pin, True)
+            gpio.output(led1Pin, False)
+        else:
+            gpio.output(led1Pin, False)
+            gpio.output(led2Pin, False)
     blinkTimer += delayTime
             
 
