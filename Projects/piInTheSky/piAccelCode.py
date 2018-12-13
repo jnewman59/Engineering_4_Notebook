@@ -6,7 +6,10 @@ import Adafruit_LSM303, math
 stage = 0
 from operator import add, truediv
 buttonPin = 18
-alarmPin = 19
+led1Pin = 19
+led2Pin = 5
+
+blinkTimer = 0.0
 
 delayTime = 0.01
 
@@ -38,16 +41,48 @@ def dot(vec1, vec2):
     return total
 
 
+def blink(stage):
+    switch(stage){
+        case 0:
+            blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
+            if blinkTimer > 0.5:
+                gpio.output(led1Pin, True)
+            else:
+                gpio.output(led1Pin, False)
+        case 1:
+            blinkTimer -= blinkTimer if blinkTimer > 1.0 else 0.0
+            if blinkTimer > 0.5:
+                gpio.output(led2Pin, True)
+            else:
+                gpio.output(led2Pin, False)
+        case 2:
+            blinkTimer -= blinkTimer if blinkTimer > 2.0 else 0.0
+            if blinkTimer > 0.5 and blinkTimer < 1.0:
+                gpio.output(led1Pin, True)
+                gpio.output(led2Pin, False)
+            if blinkTimer > 1.5;
+                gpio.output(led2Pin, True)
+                gpio.output(led1Pin, False)
+            else:
+                gpio.output(led1Pin, False)
+                gpio.output(led2Pin, False)
+    }
+    blinkTimer += delayTime
+            
+
+
 def magnitude(vec):
     return math.sqrt(sum([n**2 for n in vec]))
 
 def shriek():
-    gpio.output(alarmPin, True)
+    gpio.output(led1Pin, True)
+    gpio.output(led2Pin, True)
     for i in range(0, 10):
-        print("shrieking AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        print("shrieking -__--_--_-__-_-_---_---_-_-----_-_-----_-_-_-_-----_--__-_")
 
 def unshriek():
-    gpio.output(alarmPin, False)
+    gpio.output(led1Pin, False)
+    gpio.output(led2Pin, False)
 
 def opAdd(*x):
     #print("opadd: args are {}".format(x))
@@ -59,30 +94,39 @@ def opAdd(*x):
 
 while stage == 0:
     stage += not gpio.input(buttonPin)
+    blink(stage)
     print("stage 0")
     sleep(delayTime)
+
+blinkTimer = 0.0
 
 while stage == 1:
     if not gpio.input(buttonPin) and stageDelayTimer > 3.0/delayTime:
         stage += 1
         stageDelayTimer = 0
+    blink(stage)
     accel = [n*arbitraryConstant/100.0 for n in lsm303.read()[0]]
     accelCalibrateSum = list( map(opAdd, accelCalibrateSum, accel) )
     sample += 1
     print("stage 1, accel = {}".format(accel))
     stageDelayTimer += 1.0
     sleep(delayTime)
+
+blinkTimer = 0.0
 downVec = [-n/magnitude(accelCalibrateSum) for n in accelCalibrateSum]
 
 while stage == 2:
     accel = [n*arbitraryConstant/100.0 for n in lsm303.read()[0]]
-
+    blink(stage)
     if math.acos(dot(downVec,[-n for n in accel])/(magnitude(downVec)*magnitude(accel))) > 3.141592653589793238462643383/4.0 or (not gpio.input(buttonPin) and stageDelayTimer >0.5/delayTime):
         stage += 1
     print("stage 2, accel = {}".format(accel))
     stageDelayTimer += 1.0
     sleep(delayTime)
+
+blinkTimer = 0.0
 deltaV = [0.0,0.0,0.0]
+
 while stage == 3:
     accel = [n*arbitraryConstant/100.0 for n in lsm303.read()[0]]
     deltaV = list(map(opAdd, deltaV, [n*delayTime for n in accel], [n*9.8*delayTime for n in downVec]))
