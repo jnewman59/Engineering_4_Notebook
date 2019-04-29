@@ -107,8 +107,66 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 
 ### Lessons Learned
 
+Wrote a python script using the RPi.GPIO library to blink LEDs on a timer. Learned basic usage of said library.
+
 ### Code
 
+[gpio_led_blinker.py](/Python/gpio_led_blinker.py)
+
 ## SSH - GPIO Pins
+
+### Lessons Learned
+
+Used SSH to remotely access the pi and turn an LED on and off using bash.
+
+## Flask Intro
+
+### Lessons Learned
+
+### Code
+
+[app.py](/Python/Flask/hello_world/app.py)
+
+## Flask GPIO
+
+### Lessons Learned
+
+### Code
+
+[index.html](/Python/Flask/gpio/index.html)
+
+[app.py](/Python/Flask/gpio/app.py)
+
+[app.pyc](/Python/Flask/gpio/app.pyc)
+
+## GPIO I2C
+
+### Lessons Learned
+
+### Code
+
+## Headless Accelerometry
+
+### Lessons Learned
+
+### Code
+
+## Pi Camera
+
+### Lessons Learned
+
+### Code
+
+## Pi Alarm
+
+### Lessons Learned
+
+### Code
+
+## Copied Assignment (Parts 1 and 2)
+
+### Lessons Learned
+
+### Code
 
 # Projects
