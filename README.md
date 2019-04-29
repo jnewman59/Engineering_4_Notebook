@@ -145,11 +145,15 @@ Used SSH to remotely access the pi and turn an LED on and off using bash.
 
 ### Code
 
+[gpio_i2c.py](/Python/gpio_i2c.py)
+
 ## Headless Accelerometry
 
 ### Lessons Learned
 
 ### Code
+
+[headless.py](/Python/headless.py)
 
 ## Pi Camera
 
@@ -157,11 +161,19 @@ Used SSH to remotely access the pi and turn an LED on and off using bash.
 
 ### Code
 
+[picamera1.py](/Python/picamera1.py)
+
+[picamera2.py](/Python/picamera2.py)
+
+[picamera3.py](/Python/picamera3.py)
+
 ## Pi Alarm
 
 ### Lessons Learned
 
 ### Code
+
+[gpio_alarm.py](/Python/gpio_alarm.py)
 
 ## Copied Assignment (Parts 1 and 2)
 
@@ -169,4 +181,6 @@ Used SSH to remotely access the pi and turn an LED on and off using bash.
 
 ### Code
 
-# Projects
+[motion_camera.py](/Python/motion_camera.py)
+
+[pbsm.py](/Python/pbsm.py)
