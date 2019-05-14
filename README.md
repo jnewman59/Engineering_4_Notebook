@@ -110,6 +110,7 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 We wrote the same script as in the last assignment but using Python instead of bash, meaning we can now integrate GPIO pins/external sensors or displays into projects coded in Python.
 
 ### Code
+
 [gpio_led_blinker.py](/Python/gpio_led_blinker.py)
 
 ## SSH - GPIO Pins
@@ -117,5 +118,51 @@ We wrote the same script as in the last assignment but using Python instead of b
 ### Lessons Learned
 
 We learned how to ssh into a pi from a chromebook. This is cool because it lets us edit stuff on the pi without needing to be next to it, but we didn't really use it because the pi's IP usually changes when it restarts.
+
+
+## Hello Flask
+
+### Lessons Learned
+
+We learned how to write an extremely basic Flask app that would be visible on a local network.
+
+### Code
+
+[app.py](/Python/Flask/hello_world/app.py)
+
+## GPIO with Flask
+
+### Lessons Learned
+
+We learned how to write a more advanced Flask app that uses an HTML template and a form to send data back to the server. Basically, there are two buttons on the website that turn on or off two LEDs hooked up to the pi. 
+
+### Code
+
+[app.py](/Python/Flask/gpio/app.py)
+[index.html](/Python/Flask/gpio/templates/index.html)
+
+## GPIO I2C
+
+### Lessons Learned
+
+### Code 
+
+## Headless
+
+### Lessons Learned
+
+### Code 
+
+## Pi Camera
+
+### Lessons Learned
+
+### Code 
+
+## Hack your Stuff
+
+### Lessons Learned
+
+### Code 
 
 # Projects
