@@ -107,8 +107,15 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 
 ### Lessons Learned
 
+We wrote the same script as in the last assignment but using Python instead of bash, meaning we can now integrate GPIO pins/external sensors or displays into projects coded in Python.
+
 ### Code
+[gpio_led_blinker.py](/Python/gpio_led_blinker.py)
 
 ## SSH - GPIO Pins
+
+### Lessons Learned
+
+We learned how to ssh into a pi from a chromebook. This is cool because it lets us edit stuff on the pi without needing to be next to it, but we didn't really use it because the pi's IP usually changes when it restarts.
 
 # Projects
