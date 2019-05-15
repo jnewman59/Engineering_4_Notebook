@@ -189,7 +189,22 @@ This assignment was to figure out how to turn on and off an alarm using the pi. 
 
 ## Copypasta 1
 
+### Lessons Learned
+
+This assignment taught us how to use a motion detector and have motion trigger the camera to start recording.
+
+### Code
+
+[parent-detector.py](/Python/parent-detector.py)
+
 ## Copypasta 2
 
+### Lessons Learned
+
+This assignment taught us how to take a picture with the pi camera when a button was pressed, so combining the GPIO-Python assignment with the camera assignment.
+
+### Code
+
+[pbsm.py](/Python/pbsm.py)
 
 # Projects
