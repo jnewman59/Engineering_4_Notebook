@@ -143,26 +143,53 @@ We learned how to write a more advanced Flask app that uses an HTML template and
 
 ## GPIO I2C
 
+
+
 ### Lessons Learned
 
+This assignment taught us how to use an i2c accelerometer and display at the same time while only taking up 2 pins on the pi. THe accelerometer also came in handy in our later Pi in the Sky project.
+
 ### Code 
+
+[gpio_i2c.py](/Python/gpio_i2c.py)
 
 ## Headless
 
+
+
 ### Lessons Learned
 
+This assignment was just the last assignment but the display graphed the output from one accelerometer axis and we couldn't run the program from the pi, it had to run at startup or we had to ssh in and run it there. We chose to run it at startup instead of ssh because of the variable IP address of the pi, and this came in handy during the Pi in the Sky project where we had to run the code on startup.
+
 ### Code 
+
+[headless.py](/Python/headless.py)
 
 ## Pi Camera
 
+
+
 ### Lessons Learned
 
+This was three smaller assignments - (1) make a program that opens a window of what the camera sees then closes it after 5 seconds, (2) a program that opens a window of what the camera sees and loops through all of the possible effects, then saves a picture for five of the effects, and (3) opens a window for 10 seconds and saves it as a video.
+
 ### Code 
+
+[picamera1.py](/Python/picamera1.py)
+[picamera2.py](/Python/picamera2.py)
+[picamera3.py](/Python/picamera3.py)
 
 ## Hack your Stuff
 
+
+
 ### Lessons Learned
 
-### Code 
+This assignment was to figure out how to turn on and off an alarm using the pi. It wasn't really new stuff, just using what we learned in the GPIO assignment and previous knowledge of how to wire a circuit. We didn't even write code for this, we just wired the switch to the pi's 5 volt output pin.
+
+## Copypasta 1
+
+## Copypasta 2
+
 
 # Projects
