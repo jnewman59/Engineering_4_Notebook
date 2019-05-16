@@ -195,7 +195,7 @@ This assignment taught us how to use a motion detector and have motion trigger t
 
 ### Code
 
-[parent-detector.py](/Python/parent-detector.py)
+[motion_camera.py](/Python/motion_camera.py)
 
 ## Copypasta 2
 
