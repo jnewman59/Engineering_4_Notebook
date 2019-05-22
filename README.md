@@ -108,10 +108,14 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 ### Lessons Learned
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Wrote a python script using the RPi.GPIO library to blink LEDs on a timer. Learned basic usage of said library.
 =======
 We wrote the same script as in the last assignment but using Python instead of bash, meaning we can now integrate GPIO pins/external sensors or displays into projects coded in Python.
 >>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
+=======
+We wrote the same script as in the last assignment but using Python instead of bash, meaning we can now integrate GPIO pins/external sensors or displays into projects coded in Python.
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 
 ### Code
 
@@ -122,12 +126,18 @@ We wrote the same script as in the last assignment but using Python instead of b
 ### Lessons Learned
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Used SSH to remotely access the pi and turn an LED on and off using bash.
+=======
+We learned how to ssh into a pi from a chromebook. This is cool because it lets us edit stuff on the pi without needing to be next to it, but we didn't really use it because the pi's IP usually changes when it restarts.
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 
-## Flask Intro
+
+## Hello Flask
 
 ### Lessons Learned
 
+<<<<<<< HEAD
 =======
 We learned how to ssh into a pi from a chromebook. This is cool because it lets us edit stuff on the pi without needing to be next to it, but we didn't really use it because the pi's IP usually changes when it restarts.
 
@@ -139,35 +149,49 @@ We learned how to ssh into a pi from a chromebook. This is cool because it lets 
 We learned how to write an extremely basic Flask app that would be visible on a local network.
 
 >>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
+=======
+We learned how to write an extremely basic Flask app that would be visible on a local network.
+
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 ### Code
 
 [app.py](/Python/Flask/hello_world/app.py)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Flask GPIO
+=======
+## GPIO with Flask
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 
 ### Lessons Learned
 
+We learned how to write a more advanced Flask app that uses an HTML template and a form to send data back to the server. Basically, there are two buttons on the website that turn on or off two LEDs hooked up to the pi. 
+
 ### Code
 
-[index.html](/Python/Flask/gpio/index.html)
-
 [app.py](/Python/Flask/gpio/app.py)
-
-[app.pyc](/Python/Flask/gpio/app.pyc)
+[index.html](/Python/Flask/gpio/templates/index.html)
 
 ## GPIO I2C
 
+
+
 ### Lessons Learned
 
-### Code
+This assignment taught us how to use an i2c accelerometer and display at the same time while only taking up 2 pins on the pi. THe accelerometer also came in handy in our later Pi in the Sky project.
+
+### Code 
 
 [gpio_i2c.py](/Python/gpio_i2c.py)
 
-## Headless Accelerometry
+## Headless
+
+
 
 ### Lessons Learned
 
+<<<<<<< HEAD
 ### Code
 =======
 ## GPIO with Flask
@@ -203,39 +227,60 @@ This assignment was just the last assignment but the display graphed the output 
 
 ### Code 
 >>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
+=======
+This assignment was just the last assignment but the display graphed the output from one accelerometer axis and we couldn't run the program from the pi, it had to run at startup or we had to ssh in and run it there. We chose to run it at startup instead of ssh because of the variable IP address of the pi, and this came in handy during the Pi in the Sky project where we had to run the code on startup.
+
+### Code 
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 
 [headless.py](/Python/headless.py)
 
 ## Pi Camera
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 ### Lessons Learned
 
-### Code
+This was three smaller assignments - (1) make a program that opens a window of what the camera sees then closes it after 5 seconds, (2) a program that opens a window of what the camera sees and loops through all of the possible effects, then saves a picture for five of the effects, and (3) opens a window for 10 seconds and saves it as a video.
+
+### Code 
 
 [picamera1.py](/Python/picamera1.py)
-
 [picamera2.py](/Python/picamera2.py)
-
 [picamera3.py](/Python/picamera3.py)
 
-## Pi Alarm
+## Hack your Stuff
+
+
 
 ### Lessons Learned
 
-### Code
+This assignment was to figure out how to turn on and off an alarm using the pi. It wasn't really new stuff, just using what we learned in the GPIO assignment and previous knowledge of how to wire a circuit. We didn't even write code for this, we just wired the switch to the pi's 5 volt output pin.
 
-[gpio_alarm.py](/Python/gpio_alarm.py)
-
-## Copied Assignment (Parts 1 and 2)
+## Copypasta 1
 
 ### Lessons Learned
+
+This assignment taught us how to use a motion detector and have motion trigger the camera to start recording.
 
 ### Code
 
 [motion_camera.py](/Python/motion_camera.py)
 
+## Copypasta 2
+
+### Lessons Learned
+
+This assignment taught us how to take a picture with the pi camera when a button was pressed, so combining the GPIO-Python assignment with the camera assignment.
+
+### Code
+
 [pbsm.py](/Python/pbsm.py)
+<<<<<<< HEAD
 =======
 
 
@@ -276,8 +321,13 @@ This assignment taught us how to take a picture with the pi camera when a button
 ### Code
 
 [pbsm.py](/Python/pbsm.py)
+=======
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
 
 # Projects
 
 ## [Pi in the Sky](https://github.com/blepsch57/piinthesky)
+<<<<<<< HEAD
 >>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
+=======
+>>>>>>> 3c45a1049b12e4d0cea6b159190c9a727c4a931c
