@@ -107,7 +107,11 @@ Wrote a bash script that uses GPIO pins on the Pi to make an external LED blink 
 
 ### Lessons Learned
 
+<<<<<<< HEAD
 Wrote a python script using the RPi.GPIO library to blink LEDs on a timer. Learned basic usage of said library.
+=======
+We wrote the same script as in the last assignment but using Python instead of bash, meaning we can now integrate GPIO pins/external sensors or displays into projects coded in Python.
+>>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
 
 ### Code
 
@@ -117,16 +121,29 @@ Wrote a python script using the RPi.GPIO library to blink LEDs on a timer. Learn
 
 ### Lessons Learned
 
+<<<<<<< HEAD
 Used SSH to remotely access the pi and turn an LED on and off using bash.
 
 ## Flask Intro
 
 ### Lessons Learned
 
+=======
+We learned how to ssh into a pi from a chromebook. This is cool because it lets us edit stuff on the pi without needing to be next to it, but we didn't really use it because the pi's IP usually changes when it restarts.
+
+
+## Hello Flask
+
+### Lessons Learned
+
+We learned how to write an extremely basic Flask app that would be visible on a local network.
+
+>>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
 ### Code
 
 [app.py](/Python/Flask/hello_world/app.py)
 
+<<<<<<< HEAD
 ## Flask GPIO
 
 ### Lessons Learned
@@ -152,11 +169,46 @@ Used SSH to remotely access the pi and turn an LED on and off using bash.
 ### Lessons Learned
 
 ### Code
+=======
+## GPIO with Flask
+
+### Lessons Learned
+
+We learned how to write a more advanced Flask app that uses an HTML template and a form to send data back to the server. Basically, there are two buttons on the website that turn on or off two LEDs hooked up to the pi. 
+
+### Code
+
+[app.py](/Python/Flask/gpio/app.py)
+[index.html](/Python/Flask/gpio/templates/index.html)
+
+## GPIO I2C
+
+
+
+### Lessons Learned
+
+This assignment taught us how to use an i2c accelerometer and display at the same time while only taking up 2 pins on the pi. THe accelerometer also came in handy in our later Pi in the Sky project.
+
+### Code 
+
+[gpio_i2c.py](/Python/gpio_i2c.py)
+
+## Headless
+
+
+
+### Lessons Learned
+
+This assignment was just the last assignment but the display graphed the output from one accelerometer axis and we couldn't run the program from the pi, it had to run at startup or we had to ssh in and run it there. We chose to run it at startup instead of ssh because of the variable IP address of the pi, and this came in handy during the Pi in the Sky project where we had to run the code on startup.
+
+### Code 
+>>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
 
 [headless.py](/Python/headless.py)
 
 ## Pi Camera
 
+<<<<<<< HEAD
 ### Lessons Learned
 
 ### Code
@@ -184,3 +236,48 @@ Used SSH to remotely access the pi and turn an LED on and off using bash.
 [motion_camera.py](/Python/motion_camera.py)
 
 [pbsm.py](/Python/pbsm.py)
+=======
+
+
+### Lessons Learned
+
+This was three smaller assignments - (1) make a program that opens a window of what the camera sees then closes it after 5 seconds, (2) a program that opens a window of what the camera sees and loops through all of the possible effects, then saves a picture for five of the effects, and (3) opens a window for 10 seconds and saves it as a video.
+
+### Code 
+
+[picamera1.py](/Python/picamera1.py)
+[picamera2.py](/Python/picamera2.py)
+[picamera3.py](/Python/picamera3.py)
+
+## Hack your Stuff
+
+
+
+### Lessons Learned
+
+This assignment was to figure out how to turn on and off an alarm using the pi. It wasn't really new stuff, just using what we learned in the GPIO assignment and previous knowledge of how to wire a circuit. We didn't even write code for this, we just wired the switch to the pi's 5 volt output pin.
+
+## Copypasta 1
+
+### Lessons Learned
+
+This assignment taught us how to use a motion detector and have motion trigger the camera to start recording.
+
+### Code
+
+[parent-detector.py](/Python/parent-detector.py)
+
+## Copypasta 2
+
+### Lessons Learned
+
+This assignment taught us how to take a picture with the pi camera when a button was pressed, so combining the GPIO-Python assignment with the camera assignment.
+
+### Code
+
+[pbsm.py](/Python/pbsm.py)
+
+# Projects
+
+## [Pi in the Sky](https://github.com/blepsch57/piinthesky)
+>>>>>>> 96eb527d575fb195695ddd3f29842dd3d0a008dd
