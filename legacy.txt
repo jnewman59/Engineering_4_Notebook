@@ -3,7 +3,7 @@ Jonah Newman
 Engineering 4
 
 1. If you're controlling a flying object, watch it carefully. Especially if it's valuable.
-2. LSM303 accelerometers can determine their orientation by measuring the earth's local magnetic field, as long as you don't need it to be too precise
-3. Milled, printed, or soldered flat circuit boards are a lot less messy than breadboards
-4. If your npm commands fail due to an error with node-gyp, it might be because the package can't find your installation of a dependency, such as Visual Studio Build Tools 
+2. LSM303 accelerometers can determine their orientation by measuring the earth's local magnetic field, as long as you don't need it to be too precise.
+3. Milled, printed, or soldered flat circuit boards are a lot less messy than breadboards.
+4. If your npm commands fail due to an error with node-gyp, it might be because the package can't find your installation of a dependency, such as Visual Studio Build Tools. 
 5. If you want to propel a vehicle with a jet engine, use an engine with two counter-rotating sets of blades. A single set creates a gyroscope, which can lead to unpredictable effects when attempting to turn.
